@@ -2,8 +2,6 @@
 
 This is the official web client for the [Readstack API](https://github.com/rabberdabber/readstack-api), a newsletter curation service. This frontend provides a responsive, feature-rich interface for browsing, filtering, and sorting newsletters from various tech sources.
 
-![Readstack Web Screenshot](https://i.imgur.com/your-screenshot.png) 
-
 ## ✨ Features
 
 - **Responsive Design**: A clean and intuitive interface that works seamlessly across all devices.
@@ -35,22 +33,23 @@ Follow these instructions to get a local copy up and running for development and
 
 ### Installation
 
-1.  **Clone the repository:**
-    ```sh
-    git clone https://github.com/rabberdabber/readstack-web.git
-    cd readstack-web
-    ```
+1. **Clone the repository:**
 
-2.  **Install NPM packages:**
-    ```sh
-    npm install
-    ```
+   ```sh
+   git clone https://github.com/rabberdabber/readstack-web.git
+   cd readstack-web
+   ```
+2. **Install NPM packages:**
 
-3.  **Set up environment variables:**
-    Create a `.env.local` file in the root of your project and add the URL of your running API instance:
-    ```env
-    NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
-    ```
+   ```sh
+   npm install
+   ```
+3. **Set up environment variables:**
+   Create a `.env.local` file in the root of your project and add the URL of your running API instance:
+
+   ```env
+   NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
+   ```
 
 ### Running the Development Server
 
