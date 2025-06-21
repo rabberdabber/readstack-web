@@ -12,7 +12,8 @@ interface CategoryChipsProps {
 type Category = components["schemas"]["Category"];
 
 async function getCategories(): Promise<Category[]> {
-  const res = await fetch("http://127.0.0.1:8000/categories/");
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+  const res = await fetch(`${apiUrl}/categories/`);
   return res.json();
 }
 

@@ -16,7 +16,8 @@ async function getNewsletters(
   const sortBy = sorting.length > 0 ? sorting[0].id : "published_date";
   const sortOrder = sorting.length > 0 && sorting[0].desc ? "desc" : "asc";
 
-  let url = `http://127.0.0.1:8000/newsletters/?page=${page}&size=${size}&sort_by=${sortBy}&sort_order=${sortOrder}`;
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+  let url = `${apiUrl}/newsletters/?page=${page}&size=${size}&sort_by=${sortBy}&sort_order=${sortOrder}`;
   if (category && category !== "all") {
     url += `&category_id=${category}`;
   }
